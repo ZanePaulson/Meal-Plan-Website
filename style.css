@@ -1,5 +1,6 @@
 .heading-primary {
-  font-size: 3.2rem; }
+  font-size: 3.2rem;
+  color: #ffffff; }
 
 * {
   margin: 0;
@@ -54,5 +55,12 @@ body {
   margin: 0 auto;
   align-self: center;
   border: 1px solid #000000; }
-  .meals__monday {
-    border: 1px solid red; }
+  .meals__all {
+    display: flex;
+    flex-direction: column;
+    width: 1rem / 5rem;
+    gap: 2.4rem;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000; }
+    .meals__all--header {
+      border-bottom: 1px solid #000000; }
