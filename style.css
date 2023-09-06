@@ -1,0 +1,58 @@
+.heading-primary {
+  font-size: 3.2rem; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  font-family: "Exo 2", sans-serif; }
+
+body {
+  height: 100vh;
+  width: 100vw; }
+
+.header {
+  display: flex;
+  background-color: #68544a;
+  height: 10%;
+  align-items: center;
+  justify-content: space-between; }
+  .header__title {
+    font-size: 4.8rem;
+    margin: 1rem;
+    color: #ffffff; }
+  .header__options {
+    margin: 1rem; }
+    .header__options .link {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 2.4rem;
+      background-image: linear-gradient(to right, #2d7dd2, #2d7dd2 50%, #ffffff 50%);
+      background-size: 200% 100%;
+      background-position: -100%;
+      display: inline-block;
+      padding: 5px 0;
+      position: relative;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: all 0.4s; }
+    .header__options .link:hover {
+      background-position: 0; }
+
+.main {
+  display: flex;
+  height: 90%;
+  background-color: #bcaa99; }
+
+.meals {
+  display: flex;
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  align-self: center;
+  border: 1px solid #000000; }
+  .meals__monday {
+    border: 1px solid red; }
