@@ -1,6 +1,6 @@
 .heading-primary {
   font-size: 3.2rem;
-  color: #ffffff; }
+  color: #6e7d83; }
 
 * {
   margin: 0;
@@ -17,7 +17,7 @@ body {
 
 .header {
   display: flex;
-  background-color: #68544a;
+  background-color: #6e7d83;
   height: 10%;
   align-items: center;
   justify-content: space-between; }
@@ -29,9 +29,9 @@ body {
     margin: 1rem; }
     .header__options .link {
       text-decoration: none;
-      color: #ffffff;
+      color: #e9e8e6;
       font-size: 2.4rem;
-      background-image: linear-gradient(to right, #2d7dd2, #2d7dd2 50%, #ffffff 50%);
+      background-image: linear-gradient(to right, #344452, #344452 50%, #ffffff 50%);
       background-size: 200% 100%;
       background-position: -100%;
       display: inline-block;
@@ -46,21 +46,20 @@ body {
 .main {
   display: flex;
   height: 90%;
-  background-color: #bcaa99; }
+  background-color: #e9e8e6; }
 
 .meals {
   display: flex;
   width: 80%;
   height: 80%;
   margin: 0 auto;
-  align-self: center;
-  border: 1px solid #000000; }
+  border: 1px solid #6e7d83; }
   .meals__all {
     display: flex;
     flex-direction: column;
-    width: 1rem / 5rem;
+    padding: 1rem;
     gap: 2.4rem;
-    border-right: 1px solid #000000;
-    border-bottom: 1px solid #000000; }
-    .meals__all--header {
-      border-bottom: 1px solid #000000; }
+    border: 1px solid #6e7d83; }
+    .meals__all--header,
+    .meals__all--header .heading-primary {
+      color: #344452; }

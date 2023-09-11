@@ -1,16 +1,18 @@
 // Colors!!!
 $primary-white: #ffffff;
-$primary-black: #000000;
-$primary-green: #3e5641;
-$primary-brown: #68544a;
-$secondary-brown: #bcaa99;
-$primary-blue: #2d7dd2;
-$secondary-blue: #54b3d6;
+$secondary-white: #e9e8e6;
+$primary-grey: #6e7d83;
+$primary-black: #344452;
+$primary-green: #84894a;
+$primary-brown: #503b31;
+$secondary-brown: #c69f89;
+$primary-blue: #8fa0b2;
+$secondary-blue: #7e9291;
 $primary-red: #f87575;
 
 .heading-primary {
   font-size: 3.2rem;
-  color: $primary-white;
+  color: $primary-grey;
 }
 
 * {
@@ -31,7 +33,7 @@ body {
 
 .header {
   display: flex;
-  background-color: $primary-brown;
+  background-color: $primary-grey;
   height: 10%;
   align-items: center;
   justify-content: space-between;
@@ -47,12 +49,12 @@ body {
 
     & .link {
       text-decoration: none;
-      color: $primary-white;
+      color: $secondary-white;
       font-size: 2.4rem;
       background-image: linear-gradient(
         to right,
-        $primary-blue,
-        $primary-blue 50%,
+        $primary-black,
+        $primary-black 50%,
         $primary-white 50%
       );
       background-size: 200% 100%;
@@ -74,7 +76,7 @@ body {
 .main {
   display: flex;
   height: 90%;
-  background-color: $secondary-brown;
+  background-color: $secondary-white;
 }
 
 .meals {
@@ -83,21 +85,22 @@ body {
   height: 80%;
   margin: 0 auto;
 
-  align-self: center;
-
-  border: 1px solid $primary-black;
+  border: 1px solid $primary-grey;
 
   &__all {
     display: flex;
     flex-direction: column;
-    width: 1rem / 5rem;
+    padding: 1rem;
 
     gap: 2.4rem;
-    border-right: 1px solid $primary-black;
-    border-bottom: 1px solid $primary-black;
+
+    border: 1px solid $primary-grey;
 
     &--header {
-      border-bottom: 1px solid $primary-black;
+      &,
+      .heading-primary {
+        color: $primary-black;
+      }
     }
   }
 }
